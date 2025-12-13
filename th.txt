@@ -1,0 +1,155 @@
+MERN:
+Mongodb database
+Express js
+React js
+Node js
+
+objective: full stack web application:
+web application:
+website:- browser run :collection web pages:
+html - css  - js
+yes* mern:
+
+framework: pre define arch built on exsiting tech
+need:
+
+js --> css -->
+fw will provide common logics:
+developer has to focus only on business logic
+
+database : connectivity :100 line
+         : database connectivity : 5 6
+	 : query
+
+
+MERN:
+m..databse
+express
+react
+nodejs
+------------------------------------------------
+web application:
+frontend:
+backend:
+database
+----------------------------------------------
+facebook: 2004 -> PHP --> 
+ft -->php
+bt --->php
+tightly bounded
+database MySQL
+-----------------------------------------------
+2007 --> fet.. --> php fe --> compatible -->hold
+technology: frontend --> backend
+
+research : be -- fe
+angularjs :
+facebook : new framework: reactjs
+
+frontend : react js
+backend : nodejs
+
+------------------------------------------------
+prerequiests:
+html
+css
+js -->
+1)var ..
+2)function call back
+3)array : map filter ..
+4)json object :json array
+5)promise
+6)dom
+7)events
+--------------------------------------------------
+system req:
+node js install:
+vs code
+
+--->
+js : run --> browser :-
+js clientside
+
+------------>
+js -->server side run : node js --> run time js
+react server : server --> nodejs
+https://nodejs.org/en/download
+
+how to create react project:
+
+npm create vite
+
+npm: node package manager
+vite: tool
+
+:c-->
+packages -->header files --> functions
+:java
+JDK -->jvm/jre --> .jar- ->packages -->classes -->methods
+npm --> node_modules --> build/dist --> .js --> functions
+-------------------------------------------------------------
+d:||c:
+  -->projects
+       -->MERN
+         -->ctrl + l --> cmd
+              -->npm create vite
+		 press y
+                 projectname : learning25
+		 framework : reactjs
+		 tech : javascript
+                 cd learning25
+		 npm install
+		 code .
+
+every tag must have closing tag
+
+variable declaration:
+var let const
+
+
+
+REACT JS: frontend:
+Netflix,facebook,amzone....
+
+c ---> main -->function -->
+
+function // ---> file -->
+component based arch
+
+func == 1 compo
+comp --> file -->func...
+
+how to create cust components:
+
+react js allows to create 2 type of components
+class bases component
+function based
+
+react before v. 16 --> class based component
+curent 18.2 --> new 19
+after v 16 --> they have function based component
+
+component create ->shortcut
+---------------------
+when you create file for component ,file Name must Starts with Cap and ext will .jsx
+in react js all component name starts with Cap : otherwise it will not consider as component
+when we use shortcut lile rafc and rfc it will create component from file name...
+
+
+in js we can create 2 type of function
+1)with function keyword
+2)arrow function
+
+if export cost ---> import with {}
+if export defaul --> without {}
+
+src-
+  components
+     HeaderComponent.jsx
+     FooterComponnet.jsx
+     ContentComponet.jsx
+
+rafc
+rfc     
+
+
