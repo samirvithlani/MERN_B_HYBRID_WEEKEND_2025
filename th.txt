@@ -153,3 +153,16 @@ rafc
 rfc     
 
 
+try to avoid giving style to body tag in any css file...
+
+css:
+internal <style>
+inline :
+external :
+
+
+use className insted of class
+
+reserch on it 
+will discuss next sat...
+DOM:-
