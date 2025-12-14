@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import { ContentComponent } from './components/ContentComponent'
 import HeaderComponent from './components/HeaderComponent'
 import { FooterComponent } from './components/FooterComponent'
+import { MapDemo1 } from './components/MapDemo1'
 
 
 function App() {
@@ -19,9 +20,7 @@ function App() {
 
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      <ContentComponent></ContentComponent>
-      <FooterComponent></FooterComponent>
+     <MapDemo1></MapDemo1>
     </div>
   )
 }
