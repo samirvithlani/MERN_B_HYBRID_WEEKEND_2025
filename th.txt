@@ -166,3 +166,6 @@ use className insted of class
 reserch on it 
 will discuss next sat...
 DOM:-
+
+
+conditinal styling:
