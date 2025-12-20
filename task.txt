@@ -1,0 +1,7 @@
+20-12-2025
+----------
+create same kind of 2 table having 10 column min * row 5
+5 conditions must aplly on single table...
+
+rnd
+class and className
