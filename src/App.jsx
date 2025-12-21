@@ -15,6 +15,8 @@ import { Route, Routes } from 'react-router-dom'
 import { NetflixHome } from './components/netflix/NetflixHome'
 import { NetflixShows } from './components/netflix/NetflixShows'
 import { Navbar } from './components/Navbar'
+import { HomeComponent } from './components/HomeComponent'
+import { Error404 } from './components/Error404'
 
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Routes>
+          <Route path='/' element ={<HomeComponent/>}></Route>
           <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
           <Route path='/netflixshows' element = {<NetflixShows></NetflixShows>}></Route>
+          <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       
       
