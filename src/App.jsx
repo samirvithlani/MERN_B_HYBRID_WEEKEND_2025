@@ -14,6 +14,7 @@ import { MapDemo6 } from './components/MapDemo6'
 import { Route, Routes } from 'react-router-dom'
 import { NetflixHome } from './components/netflix/NetflixHome'
 import { NetflixShows } from './components/netflix/NetflixShows'
+import { Navbar } from './components/Navbar'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div>
-      
+      <Navbar></Navbar>
       <Routes>
           <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
           <Route path='/netflixshows' element = {<NetflixShows></NetflixShows>}></Route>

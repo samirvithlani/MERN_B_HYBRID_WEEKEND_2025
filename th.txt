@@ -200,3 +200,15 @@ base tag:
 <Route>  :it will create url for your compinent app.jsx
 
 <NetflixHome/> : url : /netflix
+
+<a href will alwasy reload page and open new link,..
+<a> replace <Link> component
+href replace to
+
+
+
+
+create compionent Navbar : copy navbar from bootstrap
+
+remove unwanted links..
+register your links in navbar..
