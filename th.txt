@@ -169,3 +169,34 @@ DOM:-
 
 
 conditinal styling:
+
+url:
+<a href ="ahouthus.html">about us</a>
+
+component : url 
+xyz --> url
+
+single page application :
+react next angular:
+index.html
+
+react routing:
+
+react router dom
+
+3rd party package
+react-router-dom
+
+npm install react-router-dom
+2 update ->package.json -->node_modules download
+
+
+//routing
+React router dom : Elements [tag]
+base tag:
+
+<BrowserRouter> : it enables routing in react application : main.jsx file...
+<Routes> :it will hold all route inside it.. :app.jsx
+<Route>  :it will create url for your compinent app.jsx
+
+<NetflixHome/> : url : /netflix

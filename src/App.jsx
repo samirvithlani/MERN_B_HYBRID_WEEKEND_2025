@@ -11,21 +11,23 @@ import { MapDemo3 } from './components/MapDemo3'
 import { MapDemo4 } from './components/MapDemo4'
 import { MapDemo5 } from './components/MapDemo5'
 import { MapDemo6 } from './components/MapDemo6'
+import { Route, Routes } from 'react-router-dom'
+import { NetflixHome } from './components/netflix/NetflixHome'
+import { NetflixShows } from './components/netflix/NetflixShows'
 
 
 function App() {
-  // //jsx
-  // var year = 2025
-  // var country = "India"
-  // var isAvailable = true
-  // var user = {
-  //   name:"amit",
-  //   age:23
-  // }
+  
 
   return (
     <div>
-     <MapDemo6></MapDemo6>
+      
+      <Routes>
+          <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
+          <Route path='/netflixshows' element = {<NetflixShows></NetflixShows>}></Route>
+      </Routes>
+      
+      
     </div>
   )
 }
