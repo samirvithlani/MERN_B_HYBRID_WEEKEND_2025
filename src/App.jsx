@@ -17,6 +17,7 @@ import { NetflixShows } from './components/netflix/NetflixShows'
 import { Navbar } from './components/Navbar'
 import { HomeComponent } from './components/HomeComponent'
 import { Error404 } from './components/Error404'
+import { PlayContent } from './components/netflix/PlayContent'
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path='/' element ={<HomeComponent/>}></Route>
           <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
           <Route path='/netflixshows' element = {<NetflixShows></NetflixShows>}></Route>
+          {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
+          <Route path='/watch/:id' element = {<PlayContent/>}></Route>
           <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       

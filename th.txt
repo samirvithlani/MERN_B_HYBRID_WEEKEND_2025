@@ -212,3 +212,19 @@ create compionent Navbar : copy navbar from bootstrap
 
 remove unwanted links..
 register your links in navbar..
+
+
+/watch/:id
+
+:id -->wild card char... || place holder
+
+impl:
+PlayContent :comp --->
+register app.js routes..
+
+shows --> li -->link 3 show -->
+
+wild card url : error check --> rectify --> by  passing data
+
+
+get data in playContent
