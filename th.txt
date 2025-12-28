@@ -225,6 +225,66 @@ register app.js routes..
 shows --> li -->link 3 show -->
 
 wild card url : error check --> rectify --> by  passing data
-
-
 get data in playContent
+
+
+hook:react hooks
+hooks javascript function which fits with react life cycle
+in react  all hook name starts with use
+eg : useState,useParams,useEffect,useMemo
+cust hook:
+useFetch, useDemo
+
+:we can impl hook at component level only..
+
+useState:
+state : object:
+
+      BOM:
+HTML : DOM : document object model
+
+Line: 20 person
+count: person 1 ........ 20
+
+next sc...
+20 person  -->16th person remove..
+---------------------------------
+re count:
+-------------------------->
+
+html top to bottom ....
+javascript use -->button add...
+reload: 
+h1,h2,h3
+
+js: add : h5
+h1,h2,h3,h5
+
+rerender: object update : DOM
+-----------------------
+
+DOM object: 1 sec : minor update: 1 sec ++
+
+--------------------------->
+react solution: V-DOM
+vdom is excet lightweighed copy of real dom
+changes --> vdom --> compre --og dom --> changes
+
+
+what is v dom : topic : sunday : doc:
+gpt, yt,.. document:
+
+
+const []=useState()
+
+const [varname,setMethod]=useState()
+
+<button onClick={increseCount}>increse</button>
+
+it is call by object no need to give ()
+
+<button onClick={()=>{decreseCount(100)}}>DECRESE 2</button>
+onClick ={}
+onClick ={()=>{}}
+onClick ={()=>{funName()}}
+

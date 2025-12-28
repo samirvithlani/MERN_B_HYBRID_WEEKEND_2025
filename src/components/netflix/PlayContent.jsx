@@ -9,6 +9,7 @@ export const PlayContent = () => {
   //varname = useParams().id -->id??? because
   //<Route path='/watch/:id' element = {<PlayContent/>}></Route>
   const data = useParams().id
+  
 
   return (
     <div style={{textAlign:"center"}}>
