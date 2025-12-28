@@ -20,6 +20,7 @@ import { Error404 } from './components/Error404'
 import { PlayContent } from './components/netflix/PlayContent'
 import { NetflixMovies } from './components/netflix/NetflixMovies'
 import { UseStateDemo } from './components/UseStateDemo'
+import { UseStateDemo2 } from './components/UseStateDemo2'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
           <Route path='/watch/:id' element = {<PlayContent/>}></Route>
           <Route path='/useStateDemo' element = {<UseStateDemo/>}></Route>
+          <Route path='/useStateDemo2' element = {<UseStateDemo2/>}></Route>
           <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       
