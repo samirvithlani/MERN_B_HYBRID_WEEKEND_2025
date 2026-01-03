@@ -22,18 +22,22 @@ export const Navbar = () => {
                 Movies
               </Link>
             </li>
-            
             <li class="nav-item active">
               <Link class="nav-link" to="/useStateDemo">
                 useStateDemo
               </Link>
             </li>
-             <li class="nav-item active">
+            <li class="nav-item active">
               <Link class="nav-link" to="/useStateDemo2">
                 useStateDemo2
               </Link>
             </li>
-            
+            <li class="nav-item active">
+              <Link class="nav-link" to="/useStateDemo3">
+                useStateDemo3
+              </Link>
+            </li>
+          
           </ul>
         </div>
       </nav>
