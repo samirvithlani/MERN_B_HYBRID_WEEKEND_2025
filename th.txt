@@ -313,9 +313,21 @@ properties:
 component
  Products.jsx
    ProductList.jsx
+     SubProductList.jsx
 
 
 data --> products --> --->---> list --> map..
+
+a -->b -->c -->d
+a ----- ,    -->c : no data
+
+props drilling....
+a -->b**** ---> c
+
+===============*=========*========*========*==============*
+Main Tap      Tap       Tap      Tap      Tap           Tap
+
+
    
 
 

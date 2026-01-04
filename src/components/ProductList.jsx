@@ -1,4 +1,5 @@
 import React from "react";
+import { SubProductList } from "./SubProductList";
 
 //? props name must be props ?? -->No
 //props data type??? object
@@ -12,6 +13,7 @@ export const ProductList = (props) => {
       <h3>Title : {props.title}</h3>
       <h3>Detail : {props.detail.name}</h3>
       <h3>Detail : {props.detail.city}</h3>
+      
       <table className="table table-dark">
         <thead>
           <tr>
@@ -34,6 +36,8 @@ export const ProductList = (props) => {
           })}
         </tbody>
       </table>
+
+      <SubProductList title={props.title}></SubProductList>
     </div>
   );
 };
