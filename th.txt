@@ -288,3 +288,34 @@ onClick ={}
 onClick ={()=>{}}
 onClick ={()=>{funName()}}
 
+ecom type:
+products : selected product
+
+inheritance:
+parent class --> child class
+a->b
+a-->b-->c --->d
+
+----------------
+components
+parent compionent  -> child component
+
+communication bw components
+main 3 conepts:
+
+1)props
+2)context
+3)redux
+
+props:
+properties:
+
+component
+ Products.jsx
+   ProductList.jsx
+
+
+data --> products --> --->---> list --> map..
+   
+
+

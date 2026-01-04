@@ -22,6 +22,8 @@ import { NetflixMovies } from './components/netflix/NetflixMovies'
 import { UseStateDemo } from './components/UseStateDemo'
 import { UseStateDemo2 } from './components/UseStateDemo2'
 import { UseStateDemo3 } from './components/UseStateDemo3'
+import { ProductList } from './components/ProductList'
+import { Products } from './components/Products'
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
           <Route path='/useStateDemo' element = {<UseStateDemo/>}></Route>
           <Route path='/useStateDemo2' element = {<UseStateDemo2/>}></Route>
           <Route path='/useStateDemo3' element = {<UseStateDemo3/>}></Route>
+          <Route path='/products' element = {<Products/>}></Route>
           <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       
