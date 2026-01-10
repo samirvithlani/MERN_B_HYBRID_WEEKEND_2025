@@ -328,6 +328,18 @@ a -->b**** ---> c
 Main Tap      Tap       Tap      Tap      Tap           Tap
 
 
+create button in table --> select product ->
+selected product
+
+
+input 
+without form:
+onChange event..
+
+html page -->event call => dom ===> event object
+
+{(event)=>{}}
+//event -->DOM -->html page
    
 
 
