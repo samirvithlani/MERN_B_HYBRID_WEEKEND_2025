@@ -342,4 +342,11 @@ html page -->event call => dom ===> event object
 //event -->DOM -->html page
    
 
+---------------------------------
+component --> input folder
+InputDemo1.jsx  --> routes -->navbar..
+
+
+
+
 

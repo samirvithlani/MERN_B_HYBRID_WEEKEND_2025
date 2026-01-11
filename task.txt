@@ -5,3 +5,9 @@ create same kind of 2 table having 10 column min * row 5
 
 rnd
 class and className
+
+
+
+NOte : submit no
+<button> : onclick : 
+afterbutton click data shou;d display
