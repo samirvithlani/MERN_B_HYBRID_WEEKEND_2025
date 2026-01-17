@@ -26,6 +26,7 @@ import { ProductList } from './components/ProductList'
 import { Products } from './components/Products'
 import { InputDemo1 } from './components/input/InputDemo1'
 import { InputDemo2 } from './components/input/InputDemo2'
+import { DepedentDropdown } from './components/input/DepedentDropdown'
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path='/products' element = {<Products/>}></Route>
           <Route path='/inputdemo1' element={<InputDemo1/>}></Route>
           <Route path='/inputdemo2' element={<InputDemo2/>}></Route>
+          <Route path='/dropdown' element ={<DepedentDropdown/>}></Route>
           <Route path='/*' element ={<Error404/>}></Route>
       </Routes>
       

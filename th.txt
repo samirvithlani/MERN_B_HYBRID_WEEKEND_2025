@@ -346,6 +346,13 @@ html page -->event call => dom ===> event object
 component --> input folder
 InputDemo1.jsx  --> routes -->navbar..
 
+array dessign country state 
+india --> guj mah, mp
+usa --> wd,cal,..
+
+
+[ SELETC COUNTRY ]
+[SELECT STATE]
 
 
 
