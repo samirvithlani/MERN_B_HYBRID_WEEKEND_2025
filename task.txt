@@ -11,3 +11,7 @@ class and className
 NOte : submit no
 <button> : onclick : 
 afterbutton click data shou;d display
+
+
+
+create demo of arrat using speread operator...

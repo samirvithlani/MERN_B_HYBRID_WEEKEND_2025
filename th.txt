@@ -354,6 +354,31 @@ usa --> wd,cal,..
 [ SELETC COUNTRY ]
 [SELECT STATE]
 
+//form handling...
+//lib :
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+console.log("Try programiz.pro");
+// ... spread opertor 
+var user ={
+    name:"raj"
+}
+console.log(user)
+console.log({...user,age:23})
+console.log({...user,age:23,name:"parth"})
+
+react-hook-form : --> formik
+
+npm i react-hook-form : hook based form
+
+handleSubmit ==>
+handleSubmit(cb)=>{}
+
+cb ==> bucket
+
 
 
 
