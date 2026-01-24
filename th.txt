@@ -379,6 +379,13 @@ handleSubmit(cb)=>{}
 
 cb ==> bucket
 
+?. : optional chaining...
 
+x ="raj"
+x.totoUpperCase() -->no error cz x is having value
+x;
+x.totoUpperCase() -> error --> cz x is undefined..
+x && x.totoUpperCase()
+x?.totoUpperCase()
 
 
