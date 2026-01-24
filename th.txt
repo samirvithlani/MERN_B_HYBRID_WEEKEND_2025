@@ -389,3 +389,29 @@ x && x.totoUpperCase()
 x?.totoUpperCase()
 
 
+
+{
+  required:
+  {
+    value:true,
+    message:"Name is Required *"
+    },
+    minLength:
+    {
+      value:3,
+      message:"min length should be 3"
+    }
+}
+
+{
+            required:{
+                value:true,
+                message:"Name is required"
+            },
+            minLength:{
+                value:3,
+                message:"min len should be >3"
+            }
+}
+
+
