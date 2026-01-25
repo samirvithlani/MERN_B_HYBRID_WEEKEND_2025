@@ -422,3 +422,27 @@ minLength
 maxLength
 pattern
 validate
+
+
+checkbox : hobbies:
+
+cricket
+chess
+dance
+reading...
+
+required:
+min 2 hobby select : 
+hiint validate:
+hint : array..
+-------------
+
+form:
+css design form:
+radio : required
+checkbox: max 3 allowed
+select : required
+email : email pattern,
+passs:min 8 char max 16 1 cap 1 small 1 number 1 special char [pattern]
+age:min,max
+

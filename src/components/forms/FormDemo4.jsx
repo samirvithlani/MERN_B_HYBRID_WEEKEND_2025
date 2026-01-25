@@ -47,6 +47,16 @@ export const FormDemo4 = () => {
                 //of first part is wrong || it will execute 2nd part
                 return params == "dhirajsir" || "invalid ref code."
             }
+        },
+        hobbiesValidator:{
+            required:{
+                value:true,
+                message:"hobbies are required *"
+            },
+            validate:(params)=>{
+                console.log(params)
+                return params.length<2 && "min 2 hobbies are required*"
+            }
         }
     }
 
@@ -71,6 +81,15 @@ export const FormDemo4 = () => {
                 <input type='text' {...register("refcode",validationSchema.refCodevalidator)}></input>
                 {errors.refcode?.message}
             </div>
+            <div>
+                <label>HOBBIES</label> <br></br>
+                CRICKET <input type='checkbox'value="cricket" {...register("hobbies",validationSchema.hobbiesValidator)}></input> <br></br>
+                Chess <input type='checkbox'value="chess" {...register("hobbies",validationSchema.hobbiesValidator)}></input> <br></br>
+                Football <input type='checkbox'value="football" {...register("hobbies",validationSchema.hobbiesValidator)}></input> <br></br>
+                Reading <input type='checkbox' value="reading" {...register("hobbies",validationSchema.hobbiesValidator)}></input> <br></br>
+                
+            </div>
+            {errors.hobbies?.message}
             <div>
                 <input type='submit'></input>
             </div>
