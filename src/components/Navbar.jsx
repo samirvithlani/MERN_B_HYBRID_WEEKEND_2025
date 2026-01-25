@@ -12,7 +12,7 @@ export const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li class="nav-item active">
+            {/* <li class="nav-item active">
               <Link class="nav-link" to="/netflixshows">
                 Shows
               </Link>
@@ -57,7 +57,7 @@ export const Navbar = () => {
               <Link class="nav-link" to="/dropdown">
                 dropdown
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item active">
               <Link class="nav-link" to="/formdemo1">
                 formdemo1
@@ -71,6 +71,11 @@ export const Navbar = () => {
             <li class="nav-item active">
               <Link class="nav-link" to="/formdemo3">
                 formdemo3
+              </Link>
+            </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/formdemo4">
+                formdemo4
               </Link>
             </li>
             

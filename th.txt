@@ -415,3 +415,10 @@ x?.totoUpperCase()
 }
 
 
+required
+min
+max
+minLength
+maxLength
+pattern
+validate
