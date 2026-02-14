@@ -15,3 +15,13 @@ afterbutton click data shou;d display
 
 
 create demo of arrat using speread operator...
+
+
+irctc
+username
+age
+gender radio
+berth pref drop down
+
+
+-->ticke print
