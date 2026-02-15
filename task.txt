@@ -22,6 +22,5 @@ username
 age
 gender radio
 berth pref drop down
-
-
 -->ticke print
+

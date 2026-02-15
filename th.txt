@@ -451,3 +451,97 @@ age:min,max
 pass --len <3 red
 pass --len >3<6 avg
 pass -len 6 <10 strong
+
+ad frontend end deve api consume
+
+
+
+Promise: async opert 
+
+pending
+resolve
+reject
+
+resolve -->then
+rejec --. catch
+
+then -->catch  ---> async await
+
+Api >bacjend server --> traffic --> slow n... ->api slow data --> data wait --> promise
+
+
+API INTEGRATION:
+application prog interface:
+
+MVC : frontend same ---> backend tech [database connectiviy]
+react -->frontend end -->no database ..
+
+react +++++ backend end -->node,pytho,java,php..ne
+
+x  <---> y
+react <--> java function
+china ---> hindi* english* --> mendrin
+translator..
+GENRIC role play
+
+react -->genric   genric -->java
+              URL --> website
+
+
+url--->backend -->tech -> url data --no web page
+API :- pen drive --> 
+zomato --> map -->google map -->
+map ->api ---> url -->request -->data
+URL --> data -->data type ---> JSON data
+
+OPERATIONS:
+Create,read,update,delete 
+url -->
+
+url -->
+request method:
+request method define: --> backend developer
+google --> data --> data send
+
+Type:
+GET,POST,PUT,DELETE
+
+backend developer
+GET:
+api -->send --> GET  eg :google --->api --> data -->GET
+POST:
+api --> <<url ---> come -->  POST : Google form --> fill --> api -->post
+DELETE:
+frontend -->delete operation --> DELETE
+PUT:
+update --> put
+
+
+frontend:
+Frontend data display --> GET -->
+fromtend -->form -->fille -->backend --> post
+
+browser can call GET api only...
+
+react --> js  --> fetch -->xhr request : xml http request
+
+3rd party package: axios
+npm i axios
+
+Component -->
+function ---> get api ->
+reponse -->
+response.data -->
+response.data.message
+response.data.data..
+
+-->
+message browser-->
+useSatte --> messgae-->
+setMessage() -->{message}
+
+useSatet -->users
+setuser(res.data.data) ===[]
+
+array -->map -->iterate..
+
