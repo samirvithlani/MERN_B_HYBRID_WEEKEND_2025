@@ -24,3 +24,7 @@ gender radio
 berth pref drop down
 -->ticke print
 
+create input tag --> get movie name form user and pass that name to api
+hint:onChange
+handler 
+useState already created..
