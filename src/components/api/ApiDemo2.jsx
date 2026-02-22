@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export const ApiDemo2 = () => {
 
@@ -12,10 +12,13 @@ export const ApiDemo2 = () => {
         console.log(res.data.products)
         setproducts(res.data.products) //[] -->no error
     }
+    useEffect(()=>{
+        getProducts()
+    },[])
   return (
     <div style={{textAlign:"center"}}>
         <h1>API DEMO 2</h1>
-        <button onClick={getProducts}>GET</button>
+        {/* <button onClick={getProducts}>GET</button> */}
         <table className="table">
             <thead>
                 <tr>

@@ -8,7 +8,7 @@ export const OmdbApiDemo = () => {
     const getMovieData=async()=>{
 
         //const res = await axios.get("https://www.omdbapi.com/?apikey=addyourapikeyb&s=12th Fail")
-        const res = await axios.get(`https://www.omdbapi.com/?apikey=addyourapikey&s=${movieName}`)
+        const res = await axios.get(`https://www.omdbapi.com/?apikey=9d57be0b&s=${movieName}`)
         console.log(res) //axios object
         console.log(res.data) //api response
         console.log(res.data.Search)

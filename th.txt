@@ -545,3 +545,9 @@ setuser(res.data.data) ===[]
 
 array -->map -->iterate..
 
+useEffect:
+to handle side effect in react js we can use useEffect:
+
+componnet --> chat load -->
+
+

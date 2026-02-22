@@ -103,6 +103,12 @@ export const Navbar = () => {
                 omdb
               </Link>
             </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/useEffectDemo">
+                useEffectDemo
+              </Link>
+            </li>
+            
             
           </ul>
         </div>
