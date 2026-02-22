@@ -37,6 +37,7 @@ import { ApiDemo1 } from './components/api/ApiDemo1'
 import { ApiDemo2 } from './components/api/ApiDemo2'
 import { OmdbApiDemo } from './components/api/OmdbApiDemo'
 import { UseEffectDemo1 } from './components/UseEffectDemo1'
+import { ApiDemo3 } from './components/api/ApiDemo3'
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
           <Route path='/formdemo6' element= {<FormDemo6/>}></Route>
           <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
           <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
+          <Route path='/apidemo3' element = {<ApiDemo3/>}></Route>
           <Route path='/omdb' element = {<OmdbApiDemo/>}></Route>
           <Route path='/useEffectDemo' element ={<UseEffectDemo1/>}></Route>
 

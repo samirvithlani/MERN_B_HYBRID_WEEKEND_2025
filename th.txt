@@ -551,3 +551,9 @@ to handle side effect in react js we can use useEffect:
 componnet --> chat load -->
 
 
+URL: https://node5.onrender.com/user/user/
+request method:POST
+data type json object:
+{name:"",email:"",age:0,password:"",isActive:true}
+
+
