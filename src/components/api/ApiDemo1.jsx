@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
 
 export const ApiDemo1 = () => {
 
@@ -20,8 +21,29 @@ export const ApiDemo1 = () => {
     setmessage(response.data.message)
     console.log(response.data.data)
     setusers(response.data.data)
-    
   }
+
+  const deleteUser = async(id)=>{
+    //alert("delete called..."+id)
+    //https://node5.onrender.com/user/user/id
+    const res = await axios.delete(`https://node5.onrender.com/user/user/${id}`)
+    console.log(res) //axios object
+    console.log(res.data) ///sctual response..
+    console.log(res.status) //204 --> 
+    if(res.status == 204){
+      //alert("user deletd..")
+      toast.success("user deleted...")
+      //database fetch -->get api call..
+      getUser() //---> get api call..
+
+      
+    }
+    else{
+      alert("error while deleteing user..")
+    }
+  }
+
+
 
   useEffect(() => {
     
@@ -35,11 +57,33 @@ export const ApiDemo1 = () => {
         <h1>API DEMO 1</h1>
         {/* <button onClick={()=>{getUser()}}>GET</button> */}
         {message}
-        {
+        <table className='table'>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>EMAIL</th>
+              <th>AGE</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
           users.map((user)=>{
-            return <li>{user.name}</li>
+            return <tr>
+              <td>{user._id}</td>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>{user.age}</td>
+              <td>
+                <button className='btn btn-danger' onClick={()=>{deleteUser(user._id)}}>DELETE</button>
+              </td>
+            </tr>
           })
         }
+          </tbody>
+        </table>
+        
        
     </div>
   )

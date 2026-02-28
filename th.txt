@@ -557,3 +557,6 @@ data type json object:
 {name:"",email:"",age:0,password:"",isActive:true}
 
 
+
+npm i react-toastify
+https://fkhadra.github.io/react-toastify/introduction/
