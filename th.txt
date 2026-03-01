@@ -560,3 +560,33 @@ data type json object:
 
 npm i react-toastify
 https://fkhadra.github.io/react-toastify/introduction/
+
+
+https://react-bootstrap.netlify.app/
+
+npm install react-bootstrap bootstrap
+
+flow:
+
+detail -->button --> function create-
+
+id pass --> alert() -->check  --> undefine check --> if condition
+
+api call --> useState -->data set
+
+bootstrap -->
+
+npm install react-bootstrap bootstrap
+
+https://react-bootstrap.netlify.app/ 
+
+search --> top right corner modals ---> 
+
+useState show -->
+
+model
+
+import model and button -->react-bootstrap
+handleClose -->
+detailUser -->after apii >show true --> check  model open..
+model edit data--> print data from singleuser useatste..

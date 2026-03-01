@@ -28,10 +28,10 @@ export const ApiDemo3 = () => {
   const addUser = async () => {
     //dummy object
     const userObj = {
-      name: "parth",
+      name: "kunal",
       age: 23,
-      password: "parth123",
-      email: "parth12345@gmail.com",
+      password: "kunal123",
+      email: "kuni234@gmail.com",
       isActive: false,
     };
 
