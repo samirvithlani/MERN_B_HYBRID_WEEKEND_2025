@@ -2,17 +2,20 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
+import { CustLoader } from "../CustLoader";
 
 export const ApiDemo1 = () => {
   const [message, setmessage] = useState("");
   const [users, setusers] = useState([]);
   const [singleUser, setsingleUser] = useState({});
-  const [show, setshow] = useState(false)
+  const [show, setshow] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
 
   //GET API --> backend ->
   const getUser = async () => {
     //get --><promise<Axios
     //response -->datatype ->proimse
+    setisLoading(true); //loader start
     const response = await axios.get("https://node5.onrender.com/user/user/");
     console.log(response); //promise object then catch [async await]
     //response -->axios object
@@ -23,6 +26,8 @@ export const ApiDemo1 = () => {
     setmessage(response.data.message);
     console.log(response.data.data);
     setusers(response.data.data);
+
+    setisLoading(false); //loader false..
   };
 
   const deleteUser = async (id) => {
@@ -53,12 +58,12 @@ export const ApiDemo1 = () => {
     setsingleUser(res.data.data);
 
     //model open --> show -->true
-    setshow(true)
+    setshow(true);
   };
 
-  const handleClose=()=>{
-    setshow(false)
-  }
+  const handleClose = () => {
+    setshow(false);
+  };
 
   useEffect(() => {
     getUser();
@@ -67,6 +72,12 @@ export const ApiDemo1 = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>API DEMO 1</h1>
+      {/* {
+        isLoading && <h1>Loading....</h1>
+      } */}
+
+      {isLoading && <CustLoader />}
+
       {/* <button onClick={()=>{getUser()}}>GET</button> */}
       {message}
       <table className="table">
