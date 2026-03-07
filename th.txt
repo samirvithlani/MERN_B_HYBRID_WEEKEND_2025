@@ -590,3 +590,11 @@ import model and button -->react-bootstrap
 handleClose -->
 detailUser -->after apii >show true --> check  model open..
 model edit data--> print data from singleuser useatste..
+
+
+update--> old data display -->form --->edit -->button update
+apidemo1 -->update button -->componnet [PpdateUser] -->form ->[old data] -->form editing.. form submit-->
+apidemo1 -->updat button -->
+  SQL -->udpate table set param  where id =?
+
+update -->COMPONET --> url -->id

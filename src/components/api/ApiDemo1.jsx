@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { CustLoader } from "../CustLoader";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
   const [message, setmessage] = useState("");
@@ -116,6 +117,7 @@ export const ApiDemo1 = () => {
                   >
                     DETAIL
                   </button>
+                  <Link to={`/updateuser/${user._id}`} className="btn btn-info">UPDATE</Link>
                 </td>
               </tr>
             );
