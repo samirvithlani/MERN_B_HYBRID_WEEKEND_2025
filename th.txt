@@ -598,3 +598,8 @@ apidemo1 -->updat button -->
   SQL -->udpate table set param  where id =?
 
 update -->COMPONET --> url -->id
+
+
+
+
+state variable change -->render

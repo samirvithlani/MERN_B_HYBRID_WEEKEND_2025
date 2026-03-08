@@ -12,6 +12,7 @@ export const UpdateUser = () => {
       const res = await axios.get(`https://node5.onrender.com/user/user/${id}`)
       return res.data.data // {}
     }})
+    
     const submitHandler  = async(data)=>{
       console.log("data to updated,,,",data) //id,name,email.age,isActive,password
       //put -->update

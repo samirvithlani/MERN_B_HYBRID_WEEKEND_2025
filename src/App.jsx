@@ -40,6 +40,7 @@ import { UseEffectDemo1 } from "./components/UseEffectDemo1";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { ToastContainer, Zoom } from "react-toastify";
 import { UpdateUser } from "./components/api/UpdateUser";
+import { UseMemoDemo } from "./components/UseMemoDemo";
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
         <Route path="/updateuser/:id" element = {<UpdateUser/>}></Route>
         <Route path="/omdb" element={<OmdbApiDemo />}></Route>
         <Route path="/useEffectDemo" element={<UseEffectDemo1 />}></Route>
+        <Route path="/usememo" element = {<UseMemoDemo/>}></Route>
 
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>
