@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeContext";
 
 export const Navbar = () => {
+  const {theme,settheme} = useContext(ThemeContext)
+  console.log("theme",theme)
+  const themeHandler = ()=>{
+    //update useSatte
+    if(theme=="light"){
+      settheme("dark")
+    }
+    else{
+      settheme("light")
+    }
+  }
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              {/* <button onClick={()=>{themeHandler()}}>CHANGE THEME</button> */}
+              <button onClick={()=>{themeHandler()}}>{theme=="light"?"DARK":"LIGHT"}</button>
+            </li>
             <li class="nav-item active">
               <Link class="nav-link" to="/netflixhome">
                 Home

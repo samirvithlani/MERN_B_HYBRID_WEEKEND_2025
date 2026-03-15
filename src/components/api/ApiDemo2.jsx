@@ -1,8 +1,11 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { ThemeContext } from '../ThemeContext'
 
 export const ApiDemo2 = () => {
 
+    const {theme} = useContext(ThemeContext)
+    console.log("theme in apidemo2",theme)
     const [products, setproducts] = useState([])
 
     const getProducts = async()=>{
