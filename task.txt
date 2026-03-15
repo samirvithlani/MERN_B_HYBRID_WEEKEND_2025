@@ -28,3 +28,7 @@ create input tag --> get movie name form user and pass that name to api
 hint:onChange
 handler 
 useState already created..
+
+
+
+on page refresh theme should not chanfe
