@@ -599,7 +599,14 @@ apidemo1 -->updat button -->
 
 update -->COMPONET --> url -->id
 
-
-
-
 state variable change -->render
+
+
+context API:
+parent component child componen t--> 
+A -->B -****>c
+A-->B -->C -->d
+A ---------->D multi level inheriatance
+
+P ------> C [p]----->
+BOOKS -->BookList--->BOOKLIST2

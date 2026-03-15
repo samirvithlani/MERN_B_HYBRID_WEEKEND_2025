@@ -42,6 +42,7 @@ import { ToastContainer, Zoom } from "react-toastify";
 import { UpdateUser } from "./components/api/UpdateUser";
 import { UseMemoDemo } from "./components/UseMemoDemo";
 import { FindBomb } from "./components/FindBomb";
+import { Books } from "./components/books/Books";
 
 function App() {
   return (
@@ -93,6 +94,7 @@ function App() {
         <Route path="/useEffectDemo" element={<UseEffectDemo1 />}></Route>
         <Route path="/usememo" element = {<UseMemoDemo/>}></Route>
         <Route path="/findbomb" element ={<FindBomb/>}></Route>
+        <Route path="/books" element = {<Books/>}></Route>
 
         <Route path="/*" element={<Error404 />}></Route>
       </Routes>
