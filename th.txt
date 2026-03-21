@@ -610,3 +610,11 @@ A ---------->D multi level inheriatance
 
 P ------> C [p]----->
 BOOKS -->BookList--->BOOKLIST2
+
+useRef : use referance
+
+react to access dom elment directly ->
+pdf geration foucs..
+
+create stopwatch 
+start and stopwatch
