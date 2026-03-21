@@ -13,11 +13,14 @@ export const Books = () => {
     
   ])
 
+  const getDataFromChild = (data)=>{
+    console.log("data in parent coming from child",data)
+  }
 
   return (
     <div style={{textAlign:"center"}}>
         <h1>BOOKS</h1>
-        <BookContext.Provider value={{bookData,bookCount}}>
+        <BookContext.Provider value={{bookData,bookCount,getDataFromChild}}>
           <BookList></BookList>    
         </BookContext.Provider>
     </div>

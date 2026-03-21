@@ -3,17 +3,16 @@ import { Link } from "react-router-dom";
 import { ThemeContext } from "./ThemeContext";
 
 export const Navbar = () => {
-  const {theme,settheme} = useContext(ThemeContext)
-  console.log("theme",theme)
-  const themeHandler = ()=>{
+  const { theme, settheme } = useContext(ThemeContext);
+  console.log("theme", theme);
+  const themeHandler = () => {
     //update useSatte
-    if(theme=="light"){
-      settheme("dark")
+    if (theme == "light") {
+      settheme("dark");
+    } else {
+      settheme("light");
     }
-    else{
-      settheme("light")
-    }
-  }
+  };
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,7 +20,13 @@ export const Navbar = () => {
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               {/* <button onClick={()=>{themeHandler()}}>CHANGE THEME</button> */}
-              <button onClick={()=>{themeHandler()}}>{theme=="light"?"DARK":"LIGHT"}</button>
+              <button
+                onClick={() => {
+                  themeHandler();
+                }}
+              >
+                {theme == "light" ? "DARK" : "LIGHT"}
+              </button>
             </li>
             <li class="nav-item active">
               <Link class="nav-link" to="/netflixhome">
@@ -74,7 +79,7 @@ export const Navbar = () => {
                 dropdown
               </Link>
             </li> */}
-            <li class="nav-item active">
+            {/* <li class="nav-item active">
               <Link class="nav-link" to="/formdemo1">
                 formdemo1
               </Link>
@@ -103,7 +108,7 @@ export const Navbar = () => {
               <Link class="nav-link" to="/formdemo6">
                 formdemo6
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item active">
               <Link class="nav-link" to="/apidemo1">
                 apidemo1
@@ -144,10 +149,17 @@ export const Navbar = () => {
                 books
               </Link>
             </li>
-            
-            
-            
-            
+
+            <li class="nav-item active">
+              <Link class="nav-link" to="/userefdemo">
+                userefdemo
+              </Link>
+            </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/userefdemo2">
+                userefdemo2
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

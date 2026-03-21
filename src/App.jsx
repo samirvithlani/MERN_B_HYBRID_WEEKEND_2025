@@ -44,6 +44,8 @@ import { UseMemoDemo } from "./components/UseMemoDemo";
 import { FindBomb } from "./components/FindBomb";
 import { Books } from "./components/books/Books";
 import { ThemeContext } from "./components/ThemeContext";
+import { UseRefDemo1 } from "./components/UseRefDemo1";
+import { UseRefDemo2 } from "./components/UseRefDemo2";
 
 function App() {
   const [theme, settheme] = useState("light")
@@ -98,6 +100,8 @@ function App() {
           <Route path="/usememo" element={<UseMemoDemo />}></Route>
           <Route path="/findbomb" element={<FindBomb />}></Route>
           <Route path="/books" element={<Books />}></Route>
+          <Route path="/userefdemo" element = {<UseRefDemo1/>}></Route>
+          <Route path="/userefdemo2" element = {<UseRefDemo2/>}></Route>
 
           <Route path="/*" element={<Error404 />}></Route>
         </Routes>
