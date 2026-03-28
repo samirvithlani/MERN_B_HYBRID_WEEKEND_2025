@@ -2,57 +2,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 //import './App.css'
-import { ContentComponent } from "./components/ContentComponent";
-import HeaderComponent from "./components/HeaderComponent";
-import { FooterComponent } from "./components/FooterComponent";
-import { MapDemo1 } from "./components/MapDemo1";
-import { MapDemo2 } from "./components/MapDemo2";
-import { MapDemo3 } from "./components/MapDemo3";
-import { MapDemo4 } from "./components/MapDemo4";
-import { MapDemo5 } from "./components/MapDemo5";
-import { MapDemo6 } from "./components/MapDemo6";
-import { Route, Routes } from "react-router-dom";
-import { NetflixHome } from "./components/netflix/NetflixHome";
-import { NetflixShows } from "./components/netflix/NetflixShows";
-import { Navbar } from "./components/Navbar";
-import { HomeComponent } from "./components/HomeComponent";
-import { Error404 } from "./components/Error404";
-import { PlayContent } from "./components/netflix/PlayContent";
-import { NetflixMovies } from "./components/netflix/NetflixMovies";
-import { UseStateDemo } from "./components/UseStateDemo";
-import { UseStateDemo2 } from "./components/UseStateDemo2";
-import { UseStateDemo3 } from "./components/UseStateDemo3";
-import { ProductList } from "./components/ProductList";
-import { Products } from "./components/Products";
-import { InputDemo1 } from "./components/input/InputDemo1";
-import { InputDemo2 } from "./components/input/InputDemo2";
-import { DepedentDropdown } from "./components/input/DepedentDropdown";
-import { FormDemo1 } from "./components/forms/FormDemo1";
-import { FormDemo2 } from "./components/forms/FormDemo2";
-import { FormDemo3 } from "./components/forms/FormDemo3";
-import { FormDemo4 } from "./components/forms/FormDemo4";
-import { FormDemo5 } from "./components/forms/FormDemo5";
-import { FormDemo6 } from "./components/forms/FormDemo6";
-import { ApiDemo1 } from "./components/api/ApiDemo1";
-import { ApiDemo2 } from "./components/api/ApiDemo2";
-import { OmdbApiDemo } from "./components/api/OmdbApiDemo";
-import { UseEffectDemo1 } from "./components/UseEffectDemo1";
-import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { ToastContainer, Zoom } from "react-toastify";
-import { UpdateUser } from "./components/api/UpdateUser";
-import { UseMemoDemo } from "./components/UseMemoDemo";
-import { FindBomb } from "./components/FindBomb";
-import { Books } from "./components/books/Books";
+import AppRoutes from "./router/AppRoutes";
 import { ThemeContext } from "./components/ThemeContext";
-import { UseRefDemo1 } from "./components/UseRefDemo1";
-import { UseRefDemo2 } from "./components/UseRefDemo2";
 
 function App() {
   const [theme, settheme] = useState("light")
   return (
     <div style={{backgroundColor:theme =="light"?"white":"black",color:theme=="light"?"black":"white"}}>
       <ThemeContext.Provider value={{theme,settheme}}>
-        <Navbar></Navbar>
+        
 
         <ToastContainer
           position="top-center"
@@ -68,43 +27,9 @@ function App() {
           transition={Zoom}
         />
 
-        <Routes>
-          <Route path="/" element={<HomeComponent />}></Route>
-          <Route path="/netflixhome" element={<NetflixHome />}></Route>
-          <Route
-            path="/netflixshows"
-            element={<NetflixShows></NetflixShows>}
-          ></Route>
-          <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
-          {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
-          <Route path="/watch/:id" element={<PlayContent />}></Route>
-          <Route path="/useStateDemo" element={<UseStateDemo />}></Route>
-          <Route path="/useStateDemo2" element={<UseStateDemo2 />}></Route>
-          <Route path="/useStateDemo3" element={<UseStateDemo3 />}></Route>
-          <Route path="/products" element={<Products />}></Route>
-          <Route path="/inputdemo1" element={<InputDemo1 />}></Route>
-          <Route path="/inputdemo2" element={<InputDemo2 />}></Route>
-          <Route path="/dropdown" element={<DepedentDropdown />}></Route>
-          <Route path="/formdemo1" element={<FormDemo1 />}></Route>
-          <Route path="/formdemo2" element={<FormDemo2 />}></Route>
-          <Route path="/formdemo3" element={<FormDemo3 />}></Route>
-          <Route path="/formdemo4" element={<FormDemo4 />}></Route>
-          <Route path="/formdemo5" element={<FormDemo5 />}></Route>
-          <Route path="/formdemo6" element={<FormDemo6 />}></Route>
-          <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
-          <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
-          <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
-          <Route path="/updateuser/:id" element={<UpdateUser />}></Route>
-          <Route path="/omdb" element={<OmdbApiDemo />}></Route>
-          <Route path="/useEffectDemo" element={<UseEffectDemo1 />}></Route>
-          <Route path="/usememo" element={<UseMemoDemo />}></Route>
-          <Route path="/findbomb" element={<FindBomb />}></Route>
-          <Route path="/books" element={<Books />}></Route>
-          <Route path="/userefdemo" element = {<UseRefDemo1/>}></Route>
-          <Route path="/userefdemo2" element = {<UseRefDemo2/>}></Route>
+        <AppRoutes></AppRoutes>
 
-          <Route path="/*" element={<Error404 />}></Route>
-        </Routes>
+     
 
       </ThemeContext.Provider>
     </div>

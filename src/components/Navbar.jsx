@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { ThemeContext } from "./ThemeContext";
 
 export const Navbar = () => {
@@ -163,6 +163,10 @@ export const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <div style={{marginTop:"10px"}}>
+        {/* //out let is useed for load children component */}
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

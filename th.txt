@@ -617,4 +617,11 @@ react to access dom elment directly ->
 pdf geration foucs..
 
 create stopwatch 
-start and stopwatch
+start and stopwatch:
+
+
+
+clean routes from app.js file..
+Create Router Folder
+creat file AppRoutes.jsx
+Remove BrowserRouter from main.jsx
