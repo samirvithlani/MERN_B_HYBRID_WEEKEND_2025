@@ -2,13 +2,25 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { UseRefDemo1 } from "../components/UseRefDemo1";
 import { UseRefDemo2 } from "../components/UseRefDemo2";
 import { Navbar } from "../components/Navbar";
+import { AdminSideBar } from "../components/AdminSideBar";
+import {ApiDemo1} from "../components/api/ApiDemo1"
+import { Login } from "../components/Login";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path:"/",element:<Login/>
+  },
+  
+  {
+
+    path: "/user",
     element: <Navbar />,
     //remeber dont add / in children router
     children: [
+      {
+        path:"",
+        element:<UseRefDemo1/> //dashboard..
+      },
       {
         path: "userefdemo",
         element: <UseRefDemo1 />,
@@ -19,6 +31,18 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:"/admin",
+    element:<AdminSideBar/>,
+    children:[
+      {
+        path:"",element:<ApiDemo1/>
+      },
+    {
+      path:"apidemo1",element:<ApiDemo1></ApiDemo1>
+    }
+    ]
+  }
 ]);
 
 const AppRoutes = () => {

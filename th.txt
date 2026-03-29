@@ -625,3 +625,17 @@ clean routes from app.js file..
 Create Router Folder
 creat file AppRoutes.jsx
 Remove BrowserRouter from main.jsx
+
+
+
+
+role based routing:
+admin: navbar 
+user: navbar
+
+
+
+adppRoutes admin and user sep router...
+AdminSideBar component : admin apidemo1 apidemo
+
+Login ---> loclstorage -->navigate -->either admin,user 

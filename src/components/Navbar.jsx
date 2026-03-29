@@ -151,12 +151,12 @@ export const Navbar = () => {
             </li>
 
             <li class="nav-item active">
-              <Link class="nav-link" to="/userefdemo">
+              <Link class="nav-link" to="/user/userefdemo">
                 userefdemo
               </Link>
             </li>
             <li class="nav-item active">
-              <Link class="nav-link" to="/userefdemo2">
+              <Link class="nav-link" to="/user/userefdemo2">
                 userefdemo2
               </Link>
             </li>
