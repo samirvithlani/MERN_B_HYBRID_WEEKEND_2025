@@ -8,7 +8,9 @@ export const Login = () => {
         //api will provide role
         //if else role =="admin" ->rediect /admin
         //role=="user"--->/user
-        navigate("/admin")
+        localStorage.setItem("token","12345")
+        localStorage.setItem("role","user") //apply hard coded...
+        navigate("/user")
 
     }
   return (

@@ -5,6 +5,7 @@ import { Navbar } from "../components/Navbar";
 import { AdminSideBar } from "../components/AdminSideBar";
 import {ApiDemo1} from "../components/api/ApiDemo1"
 import { Login } from "../components/Login";
+import ProtectedRoutes from "../components/ProtectedRoutes";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "userefdemo2",
-        element: <UseRefDemo2 />,
+        //element: <UseRefDemo2 />,
+        //element:<ProtectedRoutes roles ={["user"]}>
+        element:<ProtectedRoutes roles ={["user","admin"]}>
+          <UseRefDemo2></UseRefDemo2>
+        </ProtectedRoutes>
       },
     ],
   },
@@ -36,7 +41,11 @@ const router = createBrowserRouter([
     element:<AdminSideBar/>,
     children:[
       {
-        path:"",element:<ApiDemo1/>
+        path:"",
+        //element:<ApiDemo1/>
+        element:<ProtectedRoutes roles={["admin"]}>
+          <ApiDemo1></ApiDemo1>
+        </ProtectedRoutes>
       },
     {
       path:"apidemo1",element:<ApiDemo1></ApiDemo1>
