@@ -6,6 +6,7 @@ import { AdminSideBar } from "../components/AdminSideBar";
 import {ApiDemo1} from "../components/api/ApiDemo1"
 import { Login } from "../components/Login";
 import ProtectedRoutes from "../components/ProtectedRoutes";
+import { ProductComponent } from "../components/ProductComponent";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "userefdemo",
         element: <UseRefDemo1 />,
+      },
+      {
+        path:"productcomponent",
+        element:<ProductComponent/>
       },
       {
         path: "userefdemo2",

@@ -11,6 +11,7 @@ const cartSlice = createSlice({
     addToCart: (state, action) => {
       console.log("state..", state);
       console.log("action", action);
+      state.cart.push(action.payload)
     },
   },
 });
