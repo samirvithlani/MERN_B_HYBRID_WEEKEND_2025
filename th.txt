@@ -639,3 +639,21 @@ adppRoutes admin and user sep router...
 AdminSideBar component : admin apidemo1 apidemo
 
 Login ---> loclstorage -->navigate -->either admin,user 
+
+redux is state management tool:
+
+npm install @reduxjs/toolkit
+npm install react-redux
+
+-->factory --->[store] ---> market 
+ui -->daat ---> ui
+store -->global object
+action -->js pure function:
+reducer : previous --> next state -->
+
+ordernow -->action
+previous order --> next order -->ordenow
+
+src - redux folder
+store.js
+
