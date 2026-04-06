@@ -7,6 +7,7 @@ import {ApiDemo1} from "../components/api/ApiDemo1"
 import { Login } from "../components/Login";
 import ProtectedRoutes from "../components/ProtectedRoutes";
 import { ProductComponent } from "../components/ProductComponent";
+import { BankComponent } from "../components/BankComponent";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path:"productcomponent",
         element:<ProductComponent/>
+      },
+      {
+        path:"bank",
+        element:<BankComponent/>
       },
       {
         path: "userefdemo2",
