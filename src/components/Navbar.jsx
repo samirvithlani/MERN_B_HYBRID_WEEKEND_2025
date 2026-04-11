@@ -1,10 +1,16 @@
 import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { ThemeContext } from "./ThemeContext";
+import { useSelector } from "react-redux";
 
 export const Navbar = () => {
   const { theme, settheme } = useContext(ThemeContext);
   console.log("theme", theme);
+
+  const state = useSelector((state)=>state) //store..
+  //console.log("state obj",state.cart) //state.reducerName
+  console.log("state obj",state.cart.cart) //state.reducerName.objName
+
   const themeHandler = () => {
     //update useSatte
     if (theme == "light") {
@@ -159,6 +165,9 @@ export const Navbar = () => {
               <Link class="nav-link" to="/user/userefdemo2">
                 userefdemo2
               </Link>
+            </li>
+            <li class="nav-item active">
+              Cart : {state.cart.cart.length}
             </li>
           </ul>
         </div>
