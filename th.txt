@@ -657,3 +657,11 @@ previous order --> next order -->ordenow
 src - redux folder
 store.js
 
+
+100 student --> app --> 10 place --> 100 time -->  1000 api call --> same to same..
+1 api call 1 rs --> 1000 rs
+
+1 time api ---> -- sgtore...reeux store..
+
+middleware: asyn thunk
+

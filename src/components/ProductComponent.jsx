@@ -7,7 +7,9 @@ export const ProductComponent = () => {
   return (
     <div>
         <h1>PRODUCT COMPOENNT</h1>
-        <button onClick={()=>{dispatch(addToCart({name:"iphone",price:100}))}}>ADD TO CART</button>
+        <button onClick={()=>{dispatch(addToCart({id:1,name:"iphone",price:100}))}}>ADD TO CART iphone </button>
+        <button onClick={()=>{dispatch(addToCart({id:2,name:"ipad",price:100}))}}>ADD TO CART</button>
+        <button onClick={()=>{dispatch(addToCart({id:3,name:"laptop",price:100}))}}>ADD TO CART</button>
     </div>
   )
 }
