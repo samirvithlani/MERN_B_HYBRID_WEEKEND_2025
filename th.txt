@@ -665,3 +665,11 @@ store.js
 
 middleware: asyn thunk
 
+---->
+api call -->data ----> display --loader 
+
+
+ReduxApiDemo --> api --> store --> 3 state --> loding, data --> error
+
+-->chek ->app --> store -->content -->data --> function call no
+
