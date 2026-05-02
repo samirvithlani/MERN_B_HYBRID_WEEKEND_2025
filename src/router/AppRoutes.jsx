@@ -8,6 +8,7 @@ import { Login } from "../components/Login";
 import ProtectedRoutes from "../components/ProtectedRoutes";
 import { ProductComponent } from "../components/ProductComponent";
 import { BankComponent } from "../components/BankComponent";
+import { TailwindDemo1 } from "../components/TailwindDemo1";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path:"bank",
         element:<BankComponent/>
+      },
+      {
+        path:"taiwinddemo1",
+        element:<TailwindDemo1/>
       },
       {
         path: "userefdemo2",

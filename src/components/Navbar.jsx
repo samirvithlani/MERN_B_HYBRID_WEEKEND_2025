@@ -5,176 +5,120 @@ import { useSelector } from "react-redux";
 
 export const Navbar = () => {
   const { theme, settheme } = useContext(ThemeContext);
-  console.log("theme", theme);
 
-  const state = useSelector((state)=>state) //store..
-  //console.log("state obj",state.cart) //state.reducerName
-  console.log("state obj",state.cart.cart) //state.reducerName.objName
+  const state = useSelector((state) => state);
 
   const themeHandler = () => {
-    //update useSatte
-    if (theme == "light") {
+    if (theme === "light") {
       settheme("dark");
     } else {
       settheme("light");
     }
   };
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              {/* <button onClick={()=>{themeHandler()}}>CHANGE THEME</button> */}
+      {/* Navbar */}
+      <nav className="bg-gray-900 text-white px-6 py-3 shadow-md">
+        <div className="flex flex-wrap items-center justify-between">
+          
+          {/* Left Section */}
+          <ul className="flex flex-wrap items-center gap-4">
+            
+            {/* Theme Button */}
+            <li>
               <button
-                onClick={() => {
-                  themeHandler();
-                }}
+                onClick={themeHandler}
+                className="px-3 py-1 bg-gray-700 rounded hover:bg-gray-600 transition"
               >
-                {theme == "light" ? "DARK" : "LIGHT"}
+                {theme === "light" ? "DARK" : "LIGHT"}
               </button>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/netflixhome">
+
+            {/* Links */}
+            <li>
+              <Link to="/netflixhome" className="hover:text-gray-300">
                 Home
               </Link>
             </li>
-            {/* <li class="nav-item active">
-              <Link class="nav-link" to="/netflixshows">
-                Shows
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/netflixmovies">
-                Movies
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/useStateDemo">
-                useStateDemo
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/useStateDemo2">
-                useStateDemo2
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/useStateDemo3">
-                useStateDemo3
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/products">
-                products
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/inputdemo1">
-                inputdemo1
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/inputdemo2">
-                inputdemo2
-              </Link>
-            </li>
-            
-            <li class="nav-item active">
-              <Link class="nav-link" to="/dropdown">
-                dropdown
-              </Link>
-            </li> */}
-            {/* <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo1">
-                formdemo1
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo2">
-                formdemo2
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo3">
-                formdemo3
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo4">
-                formdemo4
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo5">
-                formdemo5
-              </Link>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/formdemo6">
-                formdemo6
-              </Link>
-            </li> */}
-            <li class="nav-item active">
-              <Link class="nav-link" to="/apidemo1">
+
+            <li>
+              <Link to="/apidemo1" className="hover:text-gray-300">
                 apidemo1
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/apidemo2">
+
+            <li>
+              <Link to="/apidemo2" className="hover:text-gray-300">
                 apidemo2
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/apidemo3">
+
+            <li>
+              <Link to="/apidemo3" className="hover:text-gray-300">
                 apidemo3
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/omdb">
+
+            <li>
+              <Link to="/omdb" className="hover:text-gray-300">
                 omdb
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/useEffectDemo">
+
+            <li>
+              <Link to="/useEffectDemo" className="hover:text-gray-300">
                 useEffectDemo
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/usememo">
+
+            <li>
+              <Link to="/usememo" className="hover:text-gray-300">
                 usememo
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/findbomb">
+
+            <li>
+              <Link to="/findbomb" className="hover:text-gray-300">
                 findbomb
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/books">
+
+            <li>
+              <Link to="/books" className="hover:text-gray-300">
                 books
               </Link>
             </li>
 
-            <li class="nav-item active">
-              <Link class="nav-link" to="/user/userefdemo">
+            <li>
+              <Link to="/user/userefdemo" className="hover:text-gray-300">
                 userefdemo
               </Link>
             </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="/user/userefdemo2">
+
+            <li>
+              <Link to="/user/userefdemo2" className="hover:text-gray-300">
                 userefdemo2
               </Link>
             </li>
-            <li class="nav-item active">
-              Cart : {state.cart.cart.length}
+            
+            <li>
+              <Link to="/user/taiwinddemo1" className="hover:text-gray-300">
+                taiwinddemo1
+              </Link>
+            </li>
+
+            {/* Cart */}
+            <li className="ml-4 font-semibold">
+              Cart: {state.cart.cart.length}
             </li>
           </ul>
         </div>
       </nav>
-      <div style={{marginTop:"10px"}}>
-        {/* //out let is useed for load children component */}
-        <Outlet></Outlet>
+
+      {/* Outlet */}
+      <div className="mt-3 px-4">
+        <Outlet />
       </div>
     </div>
   );

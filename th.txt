@@ -673,3 +673,12 @@ ReduxApiDemo --> api --> store --> 3 state --> loding, data --> error
 
 -->chek ->app --> store -->content -->data --> function call no
 
+logout button --> reeudx store --> perment store --> PURGE
+
+bootsrap: 
+mui:component: admin pan
+titaiwind css: css based utilty lib:
+
+npm i tailwindcss @tailwindcss/vite
+
+vite.confing
