@@ -3,7 +3,7 @@ import React from 'react'
 export const TailwindDemo1 = () => {
   return (
     <div>
-        <h1>TAILWIND CSS</h1>
+        {/* <h1>TAILWIND CSS</h1>
         <div  className='flex justify-between items-center p-4 bg-grey-400'>
             <h1 className='text-xl'>Logo</h1>
             
@@ -24,6 +24,12 @@ export const TailwindDemo1 = () => {
                 This is card by tailwind css
             </p>
             <button className='mt-4 bg-black text-white px-4 py-2 rounded-lg'>Read More</button>
+        </div> */}
+        <h1 className='text-pink-400'>TEXT DEMO</h1>
+        <div>
+            <h1 className='text-blue-700'>
+                Hello
+            </h1>
         </div>
     </div>
   )

@@ -107,6 +107,11 @@ export const Navbar = () => {
                 taiwinddemo1
               </Link>
             </li>
+            <li>
+              <Link to="/user/taiwinddemo2" className="hover:text-gray-300">
+                taiwinddemo2
+              </Link>
+            </li>
 
             {/* Cart */}
             <li className="ml-4 font-semibold">

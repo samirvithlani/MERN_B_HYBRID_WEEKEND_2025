@@ -9,6 +9,7 @@ import ProtectedRoutes from "../components/ProtectedRoutes";
 import { ProductComponent } from "../components/ProductComponent";
 import { BankComponent } from "../components/BankComponent";
 import { TailwindDemo1 } from "../components/TailwindDemo1";
+import { TailwindDemo2 } from "../components/TailwindDemo2";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:"taiwinddemo1",
         element:<TailwindDemo1/>
+      },
+      {
+        path:"taiwinddemo2",
+        element:<TailwindDemo2/>
       },
       {
         path: "userefdemo2",
