@@ -112,6 +112,12 @@ export const Navbar = () => {
                 taiwinddemo2
               </Link>
             </li>
+            <li>
+              <Link to="/user/taiwinddashboard" className="hover:text-gray-300">
+                taiwinddashboard
+              </Link>
+            </li>
+            
 
             {/* Cart */}
             <li className="ml-4 font-semibold">
