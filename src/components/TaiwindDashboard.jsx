@@ -18,14 +18,14 @@ export const TaiwindDashboard = () => {
           </a>
         </div>
       </nav>
-      <div className="grid grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-4 gap-4 mt-4"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+        <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-indigo-500">
+          <p className="text-sm text-gray-500">USERS</p>
+          <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
+          <p className="text-xs text-green-500 mt1">+10%</p>
+        </div>
 
-      <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-indigo-500">
-        <p className="text-sm text-gray-500">USERS</p>
-        <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
-        <p className="text-xs text-green-500 mt1">+10%</p>
-      </div>
-      
         <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-green-500">
           <p className="text-sm text-gray-500">USERS</p>
           <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
@@ -37,6 +37,18 @@ export const TaiwindDashboard = () => {
           <p className="text-xs text-green-500 mt1">+10%</p>
         </div>
         <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-red-500">
+          <p className="text-sm text-gray-500">USERS</p>
+          <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
+          <p className="text-xs text-green-500 mt1">+10%</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 lg:grid-cols-2">
+        <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-red-500 h-150">
+          <p className="text-sm text-gray-500">USERS</p>
+          <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
+          <p className="text-xs text-green-500 mt1">+10%</p>
+        </div>
+        <div className="bg-white p-6 rounded border-xl border-gray-100 border-t-4 border-red-500 h-150">
           <p className="text-sm text-gray-500">USERS</p>
           <p className="text-3xl font-bold text-gray-800 mt-1">15,000</p>
           <p className="text-xs text-green-500 mt1">+10%</p>
