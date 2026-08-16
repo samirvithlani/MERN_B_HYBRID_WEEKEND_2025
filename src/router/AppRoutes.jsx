@@ -11,6 +11,7 @@ import { BankComponent } from "../components/BankComponent";
 import { TailwindDemo1 } from "../components/TailwindDemo1";
 import { TailwindDemo2 } from "../components/TailwindDemo2";
 import { TaiwindDashboard } from "../components/TaiwindDashboard";
+import { UsersComponent } from "../backendcomm/UsersComponent";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path:"taiwinddashboard",
         element:<TaiwindDashboard/>
+      },
+      {
+        path:"usercomp",
+        element:<UsersComponent/>
       },
       {
         path: "userefdemo2",
